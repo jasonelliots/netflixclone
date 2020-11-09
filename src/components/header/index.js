@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link as ReactRouterLink } from 'react-router-dom';
 import {
   Container,
@@ -18,6 +18,7 @@ import {
   Feature,
   Logo,
 } from './styles/header';
+
 
 export default function Header({ bg = true, children, ...restProps }) {
   return bg ? (
@@ -85,6 +86,7 @@ Header.TextLink = function HeaderTextLink({ children, ...restProps }) {
 };
 
 Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
+
   return <PlayButton {...restProps}>{children}</PlayButton>;
 };
 
