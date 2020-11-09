@@ -26,11 +26,11 @@ export const Container = styled.div`
   }
 `;
 
-export const Link = styled.p`
+export const Link = styled.p` 
   color: #fff;
   text-decoration: none;
   margin-right: 30px;
-  font-weight: ${({ active }) => (active === 'true' ? '700' : 'normal')};
+  font-weight: ${({ active }) => (active === 'true' ? '800' : '500')};
   cursor: pointer;
   &:hover {
     font-weight: bold;
@@ -43,13 +43,14 @@ export const Link = styled.p`
 export const Group = styled.div`
   display: flex;
   align-items: center;
+ 
 `;
 
 export const SearchInput = styled.input`
   background-color: #44444459;
   color: white;
   border: 1px solid white;
-  transition: width 0.5s;
+  transition: width .6s;
   height: 30px;
   font-size: 14px;
   margin-left: ${({ active }) => (active === true ? '10px' : '0')};
